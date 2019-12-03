@@ -28,6 +28,145 @@
             text-transform: uppercase;
             padding: 5px;
         }
+        .main-timeline{
+            padding-top: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+        .main-timeline:before{
+            content: "";
+            width: 7px;
+            height: 100%;
+            background: #32383e;;
+            margin: 0 auto;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+        }
+        .main-timeline .timeline{
+            width: 50%;
+            float: left;
+            padding: 20px 35px;
+            border-top: 7px solid #32383e;;
+            border-right: 7px solid #32383e;;
+            border-radius: 0 30px 0 0;
+            position: relative;
+            right: -3.5px;
+        }
+        .main-timeline .icon{
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height:50px;
+            border-radius: 50%;
+            background: whitesmoke;
+            border: 1px solid #fff;
+            text-align: center;
+            font-size: 25px;
+            color: #fff;
+            box-shadow: 0 0 0 2px #32383e;
+            position: absolute;
+            top: -30px;
+            left: 0;
+        }
+        .main-timeline .timeline-content{
+            display: block;
+            padding: 30px 10px 10px;
+            border-radius: 20px;
+            background: #32383e;
+            color: #fff;
+            position: relative;
+        }
+        .main-timeline .timeline-content:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-timeline .timeline-content:before,
+        .main-timeline .timeline-content:after{
+            content: "";
+            display: block;
+            width: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background: #32383e;
+            border: 1px solid #fff;
+            position: absolute;
+            top: -35px;
+            left: 50px;
+        }
+        .main-timeline .timeline-content:after{
+            left: auto;
+            right: 50px;
+        }
+        .main-timeline .title{
+            font-size: 24px;
+            margin: 0;
+            font-family: "American Typewriter";
+        }
+        .main-timeline .description{
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+        }
+        .main-timeline .timeline:nth-child(2n){
+            border-right: none;
+            border-left: 7px solid #32383e;;
+            border-radius: 30px 0 0 0;
+            right: auto;
+            left: -3.5px;
+        }
+        .main-timeline .timeline:nth-child(2n) .icon{
+            left: auto;
+            right: 0;
+        }
+        .main-timeline .timeline:nth-child(2){ margin-top: 130px; }
+        .main-timeline .timeline:nth-child(odd){ margin: -130px 0 30px 0; }
+        .main-timeline .timeline:nth-child(even){ margin-bottom: 80px; }
+        .main-timeline .timeline:first-child,
+        .main-timeline .timeline:last-child:nth-child(even){ margin: 0 0 30px 0; }
+        .main-timeline .timeline:nth-child(2n) .timeline-content,
+        .main-timeline .timeline:nth-child(2n) .timeline-content:before,
+        .main-timeline .timeline:nth-child(2n) .timeline-content:after,
+        .main-timeline .timeline:nth-child(2n) .icon{ background:  }
+        .main-timeline .timeline:nth-child(2n) .icon{ box-shadow: 0 0 0 2px #32383e; }
+        .main-timeline .timeline:nth-child(3n) .timeline-content,
+        .main-timeline .timeline:nth-child(3n) .timeline-content:before,
+        .main-timeline .timeline:nth-child(3n) .timeline-content:after,
+        .main-timeline .timeline:nth-child(3n) .icon{ background:  }
+        .main-timeline .timeline:nth-child(3n) .icon{ box-shadow: 0 0 0 2px #32383e;; }
+        .main-timeline .timeline:nth-child(4n) .timeline-content,
+        .main-timeline .timeline:nth-child(4n) .timeline-content:before,
+        .main-timeline .timeline:nth-child(4n) .timeline-content:after,
+        .main-timeline .timeline:nth-child(4n) .icon{ background:  }
+        .main-timeline .timeline:nth-child(4n) .icon{ box-shadow: 0 0 0 2px #32383e; }
+        @media only screen and (max-width: 767px){
+            .main-timeline:before{
+                left: 0;
+                right: auto;
+            }
+            .main-timeline .timeline,
+            .main-timeline .timeline:nth-child(even),
+            .main-timeline .timeline:nth-child(odd){
+                width: 100%;
+                float: none;
+                padding: 20px 30px;
+                margin: 0 0 30px 0;
+                border-right: none;
+                border-left: 7px solid #32383e;;
+                border-radius: 30px 0 0 0;
+                right: auto;
+                left: 0;
+            }
+            .main-timeline .icon{
+                left: auto;
+                right: 0;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            .main-timeline .title{ font-size: 18px; }
+        }
+        License Terms
 
     </style>
 <body>
@@ -44,7 +183,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4" leftgroup style="background: lightgray; color: white">
+            <div class="col-sm-4" leftgroup style="background: lightgray; color: white ">
                 <div class="col-sm-12" style="font-family: 'American Typewriter'; padding: 5px" >
                     <img src="address-2.png" alt=" address"> Tan Phu , Ho Chi Minh city
                 </div>
@@ -55,9 +194,10 @@
                 <div class="col-sm-12" style="font-family: 'American Typewriter';padding: 5px">
                     <img src="smartphone.png" alt="phonenumber"> 0932791657
                 </div>
+                <br >
 
                 <div class="skillsprofessional">
-                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit;">
+                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit;color: #32383e ">
                         <img src="skills.png" alt="skills">skills professional
                     </div>
                     <div class="container-fluid">
@@ -88,9 +228,10 @@
                         </div>
                     </div>
                 </div>
+                <br>
 
                 <div class="language">
-                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit">
+                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit;color: #32383e">
                         <img src="language.png" alt="language"> languages
                     </div>
                     <div class="container-fluid">
@@ -100,8 +241,10 @@
                         </div>
                     </div>
                 </div>
+
+                <br>
                 <div class="hobbies">
-                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit;"> hobbies </div>
+                    <div class="col-sm-4" style="font-family: initial;font-size: larger;padding: inherit;color: #32383e"> hobbies </div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-12" style="font-size: large; font-family: fantasy">
@@ -115,25 +258,62 @@
                 </div>
             </div>
 
-            <div class="col-sm-8" rightgroup>
-                <div class="row"> exp </div>
-                <div class="container-fluid " >
+            <div class="col-sm-8" rightgroup style="background: lightgrey">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-8">exp1</div>
-                        <div class="col-sm-4">exp2</div>
-                    </div>
-                </div>
-                <div class="row"> edu </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-8"> edu1</div>
-                        <div class="col-sm-4"> edu2</div>
+                        <div class="col-md-12">
+                            <div class="main-timeline">
+                                <div class="timeline">
+                                    <span class="icon fa fa-globe" >
+                                        <img src="data (1).png" alt="data">
+                                    </span>
+                                    <a href="#" class="timeline-content" style="background: #32383e">
+                                        <h3 class="title">Web Designer</h3>
+                                        <p class="description" style="font-family: 'American Typewriter'">
+                                            Ut luctus non mauris et convallis. Aenean laoreet pulvinar lorem eu aliquam. Integer eleifend laoreet scelerisque.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="timeline">
+                                    <span class="icon fa fa-rocket">
+                                        <img src="domain.png" alt="webdeveloper">
+                                    </span>
+                                    <a href="#" class="timeline-content" style="background: #32383e">
+                                        <h3 class="title">Web Developer</h3>
+                                        <p class="description" style="font-family: 'American Typewriter'">
+                                            Maecenas tortor velit, ultrices et auctor consequat, vulputate sit amet dui. Maecenas nunc orci
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="timeline">
+                                    <span class="icon fa fa-bird">
+                                        <img src="app-file-format-symbol.png" alt="app">
+                                    </span>
+                                    <a href="#" class="timeline-content" style="background: #32383e">
+                                        <h3 class="title">application designer</h3>
+                                        <p class="description" style="font-family: 'American Typewriter'">
+                                            Cras aliquam ultrices sem, non pellentesque velit semper quis. Nulla non eros ultricies,
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="timeline">
+                                    <span class="icon fa fa-bird"></span>
+                                    <a href="#" class="timeline-content" style="background: #32383e">
+                                        <h3 class="title">application designer</h3>
+                                        <p class="description" style="font-family: 'American Typewriter'">
+                                            felis nulla tempus nibh, eget vestibulum nisi urna et augue. Mauris felis justo, dignissim sit
+                                        </p>
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
