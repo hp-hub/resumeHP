@@ -27,6 +27,15 @@
             text-transform: uppercase;
             padding: 5px;
         }
+        .progress {
+            transition: width 2s;
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            border-radius: 100px;
+        }
+        .progress:hover {
+            width:350px;
+        }
+
         .main-timeline{
             padding-top: 35px;
             overflow: hidden;
@@ -191,7 +200,7 @@
                     <img src="at.png" alt="email"> phat.lh04@aptechlearning.edu.vn
                 </div>
                 <div class="col-sm-12" style="font-family: 'American Typewriter';margin: 10px 0px">
-                    <img src="smartphone.png" alt="phonenumber"> 0932791657
+                    <img src="smartphone.png" alt="phonenumber"> +84932791657
                 </div>
 
                 <div class="skillsprofessional" style="border-bottom: solid 1px #32383e;padding-bottom: 10px;border-top :solid 1px #32383e;">
@@ -202,25 +211,25 @@
                         <div class="row">
                             <div class="col-sm-12" style="font-family: fantasy;font-size: large"> C
                             <div class="progress">
-                                <div class="progresss progress-bar-striped " role="progressbar" style="width: 50%;background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar-1 progress-bar-striped " role="progressbar" style="width: 0% ; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             </div>
 
                             <div class="col-sm-12" style="font-family: fantasy;font-size: large"> html
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 50% ; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar-2 progress-bar-striped " role="progressbar" style="width: 0% ; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             </div>
 
                             <div class="col-sm-12" style="font-family: fantasy;font-size: large;"> css
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 50%; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar-3 progress-bar-striped " role="progressbar" style="width: 0%; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             </div>
 
                             <div class="col-sm-12" style="font-family: fantasy;font-size: large;"> javascrip
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 50%; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar-4 progress-bar-striped " role="progressbar" style="width: 0%; background-color: slategrey" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             </div>
                         </div>
@@ -259,7 +268,7 @@
                     <div class="row" style="margin: 15px -25px 0px">
                         <div class="col-sm-11" style="color: whitesmoke;border: solid 1px #32383e;background: #32383e;text-transform: uppercase;font-family: 'American Typewriter'">experiences</div>
                         <div class="col-sm-1" style="background: #32383e">
-                            <img src="user-experience.png" alt="" style="background: white;border-radius: 9px;">
+                            <img src="user-experience.png" alt="" style="background: white;border-radius: 10px;">
                         </div>
                         <div class="col-md-12">
                             <div class="main-timeline">
@@ -298,14 +307,34 @@
                                         </p>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
 
                         <div class="col-sm-11" style="color: whitesmoke;border: solid 1px #32383e;background: #32383e;text-transform: uppercase;font-family: 'American Typewriter'">education</div>
-                        <div class="col-sm-1">
-                            <img src="college-graduation.png" alt="">
+                        <div class="col-sm-1" style="background:#32383e ">
+                            <img src="college-graduation.png" alt="" style="background: white">
                         </div>
+                            <div class="col-sm-10">
+                                <h3> secondary school</h3>
+                                I got secondary degree
+                            </div>
+                            <div class="col-sm-2">2012-2016</div>
+
+                            <div class="col-sm-10">
+                                <h3>university</h3>
+                                I got high school diploma
+                            </div>
+                            <div class="col-sm-2">2017-2019</div>
+
+                            <div class="col-sm-10">
+                                <h3>aptech computer education</h3>
+                                I got high school diploma
+                            </div>
+                            <div class="col-sm-2">2019-2022</div>
+
+                        <div class="col-sm-11" style="color: whitesmoke;border: solid 1px #32383e;background: #32383e;text-transform: uppercase;font-family: 'American Typewriter'">reference</div>
+                        <div class="col-sm-1" style="background:#32383e "></div>
+
                     </div>
                 </div>
             </div>
@@ -314,5 +343,40 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $(".progress").mouseover(function(){
+                    $(".progress-bar-1 ").css("width", "60%")
+                });
+                $(".progress").mouseout(function(){
+                    $(".progress-bar-1 ").css("width", "0%")
+                });
+            });
+            $(document).ready(function () {
+                $(".progress").mouseover(function () {
+                    $(".progress-bar-2").css("width","70%")
+                })
+                $(".progress").mouseout(function () {
+                    $(".progress-bar-2").css("width","0%")
+                })
+            })
+            $(document).ready(function () {
+                $(".progress").mouseover(function () {
+                    $(".progress-bar-3").css("width","80%")
+                })
+                $(".progress").mouseout(function () {
+                    $(".progress-bar-3").css("width","0%")
+                })
+            })
+            $(document).ready(function () {
+                $(".progress").mouseover(function () {
+                    $(".progress-bar-4").css("width","60%")
+                })
+                $(".progress").mouseout(function () {
+                    $(".progress-bar-4").css("width","0%")
+                })
+            });
+        </script>
+
 </body>
 </html>
